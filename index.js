@@ -184,8 +184,9 @@ function getFullNames(runners) {
   /* CODE HERE */
   const names = [];
   //console.log(Object.getOwnPropertyNames(runners));
-  runners.forEach(runner => names.push(`$(runner.last_name), $(runner.first_name)`));
+  runners.forEach(runner =>{ names.push(`${runner.last_name}, ${runner.first_name}`)});
   return names;
+
 }
 
 
